@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Children Arise (YCS)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link rel="preconnect" href="http://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppind :
+    wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!------------------------------------ Our Home-------------------> 
+<section class="header"> 
+  <nav>
+     <a href="Gamespace.html"> <img src="pictures/logo.png"> </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="Games.html">BLOG</a></li>
+          <li><a href="Games.html">EVENT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav> 
+
+  <div class="text-box"> 
+    <h1>THRIVE AFRICA <br> INITIATIVE</h1>
+    <h2>You were made to thrive</h2>
+    <p>Thrive Africa Initiative Organisation (TAI), established in 2020, is a non-profit and non-governmental organization dedicated to empowering young people through art, technology, and media.<br> Officially launched in February 2022, TAI provides platforms for youth to explore and develop their creative skills, fostering self-reliance <br>and sustainability in community service and development.<br>With a focus on nurturing creativity, encouraging innovation, and promoting social consciousness,</p>
+    <a href="about.html"class="hero-btn">ABOUT US</a>
+  </div>
+</section>
+
+
+<!------------------------------------ Our Projects---------------->    
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Project Title</h3>
+                <p>Project description goes here.</p>
+                <img class="poject-img"  src="hero-bg.jpg";>
+            </div>
+            <div class="project">
+                <h3>Project Title</h3>
+                <p>Project description goes her</p>
+                <img class="poject-img"  src="hero-bg.jpg";> </div>
+                <div class="project">
+                  <h3>Project Title</h3>
+                  <p>Project description goes here.</p>
+                  <img class="poject-img"  src="hero-bg.jpg";>
+              </div>
+              <div class="project">
+                <h3>Project Title</h3>
+                <p>Project description goes here.</p>
+                <img class="poject-img" src="hero-bg.jpg";>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+<!------------------------------------ Our Goals------------------->
+    <section id="Goals" class="scroll-reveal">
+    <div class="goals-grid">
+      <div class="goals">
+       <h1><span>Our Goals</span></h1>
+       </div>
+       <div class="goals">
+        <p class="p-text"><span>The goal of the Thrive Africa Initiative Organisation (TAI)<br>is to contribute to a unified and healthy world by providing children and youth, especially those marginalized, with the opportunity to participate in socio-economic development decisions that affect them.This involves creating platforms and opportunities for these groups to be actively involved and have their voices heard in community and societal development.</span></p>
+      </div>
+    </div>
+  </section>
+  <!---------------------------------Our Slidshow ------------------->
+  <section id="Slidshow" class="slideshow">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="pictures/slide 1.jpg" style="width:100%">
+        <div class="text">TEAM WORK</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="pictures/slide 2.jpg" style="width:100%">
+        <div class="text">GROWTH</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="pictures/slide 3.jpg" style="width:100%">
+        <div class="text">THRIVE</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+  </section>
+
+<!---------------------------------Our Donation------------------->
+    
+    <section id="donate">
+      <h2>Support Us</h2>
+      <p>Your donations help us continue our mission. Please support us in empowering children to reach their full potential.</p>
+      <button onclick="showDonationModal()">Donate Now</button>
+  </section>
+
+  <div id="donation-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeDonationModal()">&times;</span>
+        <h2>Donate to YCS</h2>
+        <p>you can send your donations to 
+          <hr>
+          <br> Airtel: 0970875843 
+          <br> MTN: 0960875843
+          <br> Zamtel: 095213231
+        </p>
+     
+    </div>
+</div>
+
+<!-----------Call to  action---------->
+
+<section class="cta">
+  <h1>GET TO KNOW ABOUT US</h1>
+  <a href="about.html" class="hero-btn">About us</a>
+  <a href="contact.html" class="hero-btn">Contuct us</a>
+</section>
+
+
+    <!----------- footer ----------> 
+    <footer>
+      <section class="footer">
+        <h4>Get to know more about us</h4>
+        <p>follow us on our social media platforms to be updated</p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </section>
+      <p>&copy; 2024 Thrive Africa Initiative Organisation (TAI). All rights reserved.</p>
+      <p>Made By <i class="fa fa-gamepad"></i> Zoey Muleya</p>
+
+  </footer>
+</body>
+</html>
