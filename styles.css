@@ -60,6 +60,39 @@ nav img{
 .nav-links ul li:hover::after{
  width:100%;
 }
+
+/* -----------------------drop down */
+
+.nav-links ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #20678b;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links ul li .dropdown-content li {
+  padding: 12px 16px;
+}
+
+.nav-links ul li .dropdown-content li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links ul li:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links ul li:hover .dropdown-content li a:hover {
+  background-color: #ddd;
+}
+/* -----------------------drop down */
+
 .text-box{
  width:90%;
  color:#fff;
@@ -139,6 +172,8 @@ nav .fa{
  }
 }
 
+
+
 /* ---------who we are--------  */
 .who-we-are{
   background-color: #ffffff;
@@ -191,6 +226,24 @@ nav .fa{
 }
 .who-we-are a:hover{
   background-color: #0c3f92;
+}
+
+@media (max-width: 643px) {
+  .sub-who-we-are{
+    padding: 1px;
+  }
+  .who-we-are-grid{
+    padding: 2px;
+  }
+  .who-we-are-text {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px; 
+    font-size: 50px;
+  }
+  .who-we-are p{
+    font-size: 15px;
+  }
 }
 
 
@@ -260,6 +313,15 @@ p {
   border-bottom-right-radius:20px;
   
 }
+
+@media (max-width: 643px){
+  .project-section h2 {
+    font-size: 50px;
+  }
+  .project {
+    width: 400px;
+  }
+}
 /*---------About us------------------------------------------ */
 
 .sub-header
@@ -295,10 +357,14 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  border-radius: 40px;
+}
+.card img {
+  border-radius: 40px;
 }
 
 .container {
-  padding: 0 16px;
+  padding: 0 10px;
 }
 
 .container::after, .row::after {
@@ -320,19 +386,86 @@ html {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
+  border-radius: 20px;
+  transition: 0.5s;
 }
 
 .button:hover {
-  background-color: #555;
+  width: 80%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 790px) {
   .column {
     width: 100%;
     display: block;
   }
 }
+
+
+/* --------------------------News update------------ */
+.news-grid {
+  gap: 20px;
+  padding: 2px;
+  justify-content: center;
+  border: px solid #aa2b2b;
+  background-color: #03255a;
+}
+
+.blog-post {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #239388;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.9s ease;
+}
+
+.blog-post:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.post-info {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.post-content h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.post-content p {
+    line-height: 1.6;
+    color: #030303;
+}
+
+.post-content {
+    display: none; /* Hidden by default */
+    background-color: #307e7700;
+}
+
+.post-content.active {
+    display: block; /* Show when active */
+}
+
 
 
 
@@ -449,6 +582,39 @@ html {
   padding-top: 100px;
 }
 
+@media (max-width: 643px) {
+  .corevalue {
+    padding: 10px;
+    width: 400px;
+
+    padding-top: 20px;
+  }
+  .corevalue-img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .corevalue-grid {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .corevalue h1 {
+    font-size: 36px;
+  }
+
+  .corevalue h3 {
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+  }
+}
+.corevalue p {
+  font-size: 18px;
+  text-align: center;
+}
+.corevalue ul li{
+ padding: 3px;
+ font-size: 15px;
+ font-family:'Times New Roman', Times, serif;
+}
 
 /*---------------------------------Donate -------------------*/
 .donate button {
@@ -540,6 +706,30 @@ input, textarea {
   cursor: pointer;
 }
 
+@media (max-width: 643px) {
+  .donate{
+    padding: 20px;
+    margin-top: 0px;
+    color: #000000;
+    margin-top: -1px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  .donate h2 {
+    font-size: 30px;
+   }
+   .donate p {
+     font-size: 20px;
+    }
+
+    .donate button {
+      padding: 1px 2px;
+      padding: 10px;
+      font-size: 20px;
+    }
+
+}
+
 
 /*------- categories---------*/
 .row{
@@ -559,6 +749,17 @@ input, textarea {
   padding-bottom: 100px;
   background-color: #ffffff;
   color: black;
+}
+.campus h1{
+  font-size: 90px;
+  color: #066a2e;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.campus p{
+  font-size: 30px;
+  color: #066a2e;
+  margin-top: 10px;
 }
 
 .campus-col{
@@ -609,17 +810,34 @@ input, textarea {
   bottom: 49%;
   opacity: 1;
 }
-
-@media (max-width: 780px) {
+@media (max-width: 780px ) {
   .layer h3{
-    font-size: 15px;
+    text-wrap:pretty;
+    font-size: 26px;
   }
+  .row{
+    padding-inline: 8px;
+    gap: 2px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 643px ) {
+
   .row{
     display:block;
     justify-content:space-around;
   }
+  .campus h1{
+    font-size: 50px;
+  }
+  .campus p{
+    font-size: 25px;
+  }
 
 }
+
 
 /*---------------------------------Our Slidshow -------------------*/
 
@@ -760,6 +978,15 @@ input, textarea {
     font-size: 24px;
   }
 }
+@media (max-width: 643px ){
+  .cta{
+    margin: 0px auto;
+    width: 100%;
+    border-radius: 0px;
+    padding: 50px 0;
+  }
+
+}
 
 
 /*----------------------contact us page-------------------*/
@@ -841,7 +1068,24 @@ input, textarea {
   }
 }
 
-
+@media(max-width:643px) {
+  .contact-col div .fa{
+    font-size: 25px;
+    color: #4c36f4;
+    margin: 0px;
+    margin-right: 20px;
+ }
+ .contact-col div p{
+   padding-right: 30px;
+   font-size: 15px;
+ }
+ .contact-col div h5{
+   font-size: 15px;
+   margin-bottom: 0px;
+   color: #449254;
+   font-weight: 400;
+ }
+}
 /*--------------------FOOTER----------*/
 footer {
   background-color: #000000;
