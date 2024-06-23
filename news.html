@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <script defer src="scripts.js"></script>
   <link rel="preconnect" href="http://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppind :
   wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,26 +24,21 @@
 <!------------------------------------ Our Home-------------------> 
 <section class="sub-header"> 
   <nav>
-     <a href="Gamespace.html"> <img src="pictures/logo.png"> </a>
-      <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li class="dropdown">
-            <a href="https://aboutg.my.canva.site/thrive-africa-initiative-initiatives">BLOG</a>
-               <ul class="dropdown-content">
-                 <li><a href="news.html">NEWS</a></li>
-               </ul>
-          </li>
-                 
-          <li><a href="profile.html">PROFILE</a></li>
-          <li><a href="#donate">DONATE</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
-  </nav> 
+    <a href="Gamespace.html"> <img src="pictures/logo.png"> </a>
+     <div class="nav-links" id="navLinks">
+       <i class="fa fa-times" onclick="hideMenu()"></i>
+       <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="about.html">ABOUT</a></li>
+         <li> <a href="https://aboutg.my.canva.site/thrive-africa-initiative-initiatives">BLOG</a></li>
+         <li><a href="news.html">NEWS</a></li>
+         <li><a href="profile.html">PROFILE</a></li>
+         <li><a href="#donate">DONATE</a></li>
+         <li><a href="contact.html">CONTACT</a></li>
+       </ul>
+     </div>
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+ </nav>   
 
   <div class="text-box"> 
     <h1> OUR NEWS (TAI)</h1>
@@ -54,65 +50,82 @@
   <!-------------------------------- News post -->
 
   <section class="news-grid">
+    <div class="blog-post" onclick="toggleContent(this)">
+      <div class="profile">
+          <img src="pictures/WhatsApp Image 2024-06-12 at 15.20.26_1288d9bf.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="post-info">
+              <p class="post-time">June 23, 2024 - 2:15 PM</p>
+              <h1>First Blog Post Title</h1>
+          </div>
+      </div>
+      <div class="post-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis vehicula arcu, a dapibus neque. Nullam eget justo vel felis consectetur efficitur. Nam fermentum dui ut arcu bibendum, vitae elementum purus consectetur.</p>
+          <p>Suspendisse potenti. Integer consectetur nisi id ligula sollicitudin, sed tincidunt sapien interdum. Duis ac nunc ligula. Vestibulum ac ultrices quam. Nam at elit nibh. Morbi venenatis posuere leo, id facilisis odio dignissim et.</p>
+      </div>
+      <div class="like-section">
+        <i class="far fa-thumbs-up like-icon" onclick="likePost(event, this)"></i>
+        <span class="like-count">0 Likes</span>
+    </div>
+  </div>
+
   <div class="blog-post" onclick="toggleContent(this)">
-    <div class="profile">
-        <img src="pictures/cat3.jpg" alt="Profile Picture" class="profile-pic">
-        <div class="post-info">
-            <p class="post-time">June 23, 2024 - 2:15 PM</p>
-            <p1>Thrive africa Initiatve News update</p1>
-        </div>
-    </div>
-    <div class="post-content">
-        <h1>First Blog Post Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis vehicula arcu, a dapibus neque. Nullam eget justo vel felis consectetur efficitur. Nam fermentum dui ut arcu bibendum, vitae elementum purus consectetur.</p>
-        <p>Suspendisse potenti. Integer consectetur nisi id ligula sollicitudin, sed tincidunt sapien interdum. Duis ac nunc ligula. Vestibulum ac ultrices quam. Nam at elit nibh. Morbi venenatis posuere leo, id facilisis odio dignissim et.</p>
-    </div>
-</div>
-
-<div class="blog-post" onclick="toggleContent(this)">
-    <div class="profile">
-        <img src="pictures/cat3.jpg" alt="Profile Picture" class="profile-pic">
-        <div class="post-info">
-            <p class="post-time">June 22, 2024 - 1:45 PM</p>
-            <p1>Thrive africa Initiatve News update</p1>
-        </div>
-    </div>
-    <div class="post-content">
-        <h1>Second Blog Post Title</h1>
-        <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-        <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-    </div>
-</div>
-
-<div class="blog-post" onclick="toggleContent(this)">
-    <div class="profile">
-        <img src="pictures/cat3.jpg" alt="Profile Picture" class="profile-pic">
-        <div class="post-info">
-            <p class="post-time">June 21, 2024 - 3:00 PM</p>
-            <p1>Thrive africa Initiatve News update</p1>
-        </div>
-    </div>
-    <div class="post-content">
-        <h1>Third Blog Post Title</h1>
-        <p>Fusce ac felis sit amet ligula pharetra condimentum. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Aenean imperdiet.</p>
-        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-    </div>
-</div>
-
-<div class="blog-post" onclick="toggleContent(this)">
-  <div class="profile">
-      <img src="pictures/cat3.jpg" alt="Profile Picture" class="profile-pic">
-      <div class="post-info">
-          <p class="post-time">June 21, 2024 - 3:00 PM</p>
-          <p1>Thrive africa Initiatve News update</p1>
+      <div class="profile">
+          <img src="pictures/WhatsApp Image 2024-06-12 at 15.20.26_1288d9bf.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="post-info">
+              <p class="post-time">June 22, 2024 - 1:45 PM</p>
+              <h1>Second Blog Post Title</h1>
+          </div>
+      </div>
+      <div class="post-content">
+          <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+          <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+      </div>
+      <div class="like-section">
+          <i class="far fa-thumbs-up like-icon" onclick="likePost(event, this)"></i>
+          <span class="like-count">0 Likes</span>
       </div>
   </div>
-  <div class="post-content">
-      <h1>Third Blog Post Title</h1>
-      <p>Fusce ac felis sit amet ligula pharetra condimentum. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Aenean imperdiet.</p>
-      <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+
+  <div class="blog-post" onclick="toggleContent(this)">
+      <div class="profile">
+          <img src="pictures/WhatsApp Image 2024-06-12 at 15.20.26_1288d9bf.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="post-info">
+              <p class="post-time">June 21, 2024 - 3:00 PM</p>
+              <h1>Third Blog Post Title</h1>
+          </div>
+          
+      </div>
+      <div class="post-content">
+         
+          <p>Fusce ac felis sit amet ligula pharetra condimentum. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Aenean imperdiet.</p>
+          <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+      </div>
+      <div class="like-section">
+          <i class="far fa-thumbs-up like-icon" onclick="likePost(event, this)"></i>
+          <span class="like-count">0 Likes</span>
+      </div>
   </div>
-</div>
+
+  <div class="blog-post" onclick="toggleContent(this)">
+      <div class="profile">
+          <img src="pictures/WhatsApp Image 2024-06-12 at 15.20.26_1288d9bf.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="post-info">
+              <p class="post-time">June 21, 2024 - 3:00 PM</p>
+              <h1>Fourth Blog Post Title</h1>
+          </div>
+          
+      </div>
+      <div class="post-content">
+         
+          <p>Fusce ac felis sit amet ligula pharetra condimentum. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Aenean imperdiet.</p>
+          <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+      </div>
+      <div class="like-section">
+          <i class="far fa-thumbs-up like-icon" onclick="likePost(event, this)"></i>
+          <span class="like-count">0 Likes</span>
+      </div>
+  </div>
+
 
 </section>
 
@@ -170,6 +183,56 @@ function toggleContent(post) {
     content.classList.toggle('active');
 }
 
+function likePost(event, button) {
+    // Prevent the post from toggling when the like button is clicked
+    event.stopPropagation();
+
+    // Find the like count span in the same like-section as the button
+    var likeCountSpan = button.nextElementSibling;
+    var currentCount = parseInt(likeCountSpan.innerText);
+
+    // Increase the like count
+    currentCount++;
+    likeCountSpan.innerText = currentCount + ' Likes';
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Load like counts from local storage when the page loads
+    document.querySelectorAll('.blog-post').forEach((post, index) => {
+        let likeCountSpan = post.querySelector('.like-count');
+        let storedCount = localStorage.getItem(`likeCount${index}`);
+        if (storedCount) {
+            likeCountSpan.innerText = `${storedCount} Likes`;
+        }
+    });
+});
+
+function toggleContent(post) {
+    var content = post.querySelector('.post-content');
+    content.classList.toggle('active');
+}
+
+function likePost(event, button) {
+    // Prevent the post from toggling when the like button is clicked
+    event.stopPropagation();
+
+    // Find the like count span in the same like-section as the button
+    var likeCountSpan = button.nextElementSibling;
+    var currentCount = parseInt(likeCountSpan.innerText);
+
+    // Increase the like count
+    currentCount++;
+    likeCountSpan.innerText = currentCount + ' Likes';
+
+    // Find the index of the post
+    var post = button.closest('.blog-post');
+    var posts = document.querySelectorAll('.blog-post');
+    var index = Array.from(posts).indexOf(post);
+
+    // Save the updated like count to local storage
+    localStorage.setItem(`likeCount${index}`, currentCount);
+}
     </script>
 </body>
 </html>
