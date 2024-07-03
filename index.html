@@ -10,8 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppind :
     wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 <body>
+  
 <!------------------------------------ Our Home-------------------> 
 <section class="header"> 
   <nav>
@@ -60,7 +63,7 @@
   
   </div>
   <div class="sub-who-we-are"> 
-    <img class="sub-img-2" src="pictures/who 2.jpg">
+    <img class="sub-img-2" src="pictures/IMG-20240629-WA0001.jpg">
   </div>
 </div>
 
@@ -72,21 +75,21 @@
             <div class="project">
                 <h3>Project Title</h3>
                 <p>Project description goes here.</p>
-                <img class="poject-img"  src="hero-bg.jpg";>
+                <img class="poject-img"  src="pictures/art1.jpg";>
             </div>
             <div class="project">
                 <h3>Project Title</h3>
                 <p>Project description goes her</p>
-                <img class="poject-img"  src="hero-bg.jpg";> </div>
+                <img class="poject-img"  src="pictures/art2.jpg";> </div>
                 <div class="project">
                   <h3>Project Title</h3>
                   <p>Project description goes here.</p>
-                  <img class="poject-img"  src="hero-bg.jpg";>
+                  <img class="poject-img"  src="pictures/art3.jpg";>
               </div>
               <div class="project">
                 <h3>Project Title</h3>
                 <p>Project description goes here.</p>
-                <img class="poject-img" src="hero-bg.jpg";>
+                <img class="poject-img" src="pictures/art4.jpg";>
             </div>
             <!-- Add more projects as needed -->
         </div>
@@ -167,27 +170,27 @@
     
       <div class="row">
         <div class="campus-col">
-          <img src="pictures/cat1.jpg">
+          <img src="pictures/Focuse project (3).jpg">
           <div class="layer"> 
             <h3>ART</h3>
           </div>
         </div>
         <div class="campus-col">
-          <img src="pictures/cat2.jpg">
+          <img src="pictures/Focuse project (2).jpg">
           <div class="layer"> 
             <h3>Entrepreneur</h3>
           </div>
         </div>
     
         <div class="campus-col">
-          <img src="pictures/cat3.jpg">
+          <img src="pictures/Focuse project (1).jpg">
           <div class="layer"> 
             <h3>Skills unlocked</h3>
           </div>
         </div>
     
         <div class="campus-col">
-          <img src="pictures/cat4.jpg">
+          <img src="pictures/Focuse project (4).jpg">
           <div class="layer"> 
             <h3>Entertainment</h3>
           </div>
@@ -196,44 +199,76 @@
     
       </div>
     </section>
+    <!---------------------------------Our Slidshow ------------------->
+<section class="slide-ngo">
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="pictures/slideshow (1).jpg" alt="Explorer">
+                <div class="text-overlay">Explorer</div>
+            </div>
+            <div class="slide">
+                <img src="pictures/slideshow (2).jpg" alt="Grow">
+                <div class="text-overlay">Grow</div>
+            </div>
+            <div class="slide">
+                <img src="pictures/slideshow (3).jpg" alt="Thrive">
+                <div class="text-overlay">Thrive</div>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <video autoplay loop muted class="bird-video">
+            <source src="pictures/Black and Orange Simple Launching Soon Facebook Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
 
-  <!---------------------------------Our Slidshow ------------------->
-  <section id="Slidshow" class="slideshow">
-    <div class="slideshow-container">
+<!-- jQuery and Slick Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 800,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false
+        });
+    });
+</script>
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="pictures/slide 1.jpg" style="width:100%">
-        <div class="text">TEAM WORK</div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="pictures/slide 2.jpg" style="width:100%">
-        <div class="text">GROWTH</div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="pictures/slide 3.jpg" style="width:100%">
-        <div class="text">THRIVE</div>
-      </div>
-      
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-      
-      </div>
-      <br>
-      
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
-  </section>
-
-
-
+            <!--------------------------------------- contuct form  -->
+            <section class="contact-1">
+              <div class="contact-section">
+                  <div class="contact-info">
+                      <h2>LET'S CONTACT</h2>
+                  </div>
+                  <form class="contact-form">
+                      <div class="form-group">
+                          <input type="text" name="name" placeholder="Name" required>
+                          <input type="email" name="email" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="tel" name="phone" placeholder="Phone" required>
+                          <input type="text" name="subject" placeholder="Subject" required>
+                      </div>
+                      <textarea name="message" placeholder="Message" required></textarea>
+                      <button type="submit" class="submit-button">SEND MESSAGE</button>
+                  </form>
+                  <div class="contact-details">
+                      <p>Call Us Now</p>
+                      <p>+260965899179</p>
+                  </div>
+              </div>
+          </section>
+        
 <!-----------Call to  action---------->
 
 <section class="cta">
@@ -241,7 +276,6 @@
   <a href="about.html" class="hero-btn">About us</a>
   <a href="contact.html" class="hero-btn">Contuct us</a>
 </section>
-
 
     <!----------- footer ----------> 
     <footer>
