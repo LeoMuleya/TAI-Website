@@ -1192,6 +1192,9 @@ footer {
   text-align: center;
   padding: 10px;
 }
+.footer img {
+  width: 200px;
+}
 
 .footer h4{
   margin-bottom: 25px;
