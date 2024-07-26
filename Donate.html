@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrive Africa Initiative </title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <link rel="preconnect" href="http://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppind :
+  wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.donation-section {
+ display: flex;
+ background: rgba(23, 125, 42, 0.844);
+ padding: 20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.slideshow-container {
+ flex: 1;
+ margin-right: 20px;
+}
+
+.mySlides {
+ display: none;
+}
+
+.mySlides img {
+ border-radius: 100px;
+ height: 600px;
+}
+
+.donation-content {
+ flex: 1;
+ text-align: center;
+}
+
+.donation-content h1 {
+ color: #f5f5f5;
+ font-size: 70px;
+}
+
+.donation-content p {
+ color: #000000;
+ font-size: 30px;
+}
+
+#donate-button {
+ background-color: #28a745;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 18px;
+ outline:#023e72 10px solid;
+}
+
+#donate-button:hover {
+ background-color: #218838;
+}
+
+.popup {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0,0,0,0.5);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.popup-content {
+ text-align: right;
+ background: white;
+ padding: 20px;
+ border-radius: 10px;
+ width: 80%;
+ max-width: 500px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.popup-2{
+ text-align: center;
+}
+
+.close {
+ position:relative;
+ font-size: 30px;
+ cursor: pointer;
+}
+
+.hidden {
+ display: none;
+}
+
+.donation-method {
+ margin: 20px 0;
+}
+
+.donation-method h3 {
+ color: #333;
+}
+
+.donation-method p {
+ color: #555;
+ font-size: 16px;
+}
+@media screen and (min-width: 1200px) {
+    .donation-content h1 {
+ color: #f5f5f5;
+ font-size: 90px;
+}
+}
+@media screen and (max-width: 630px) {
+    .donation-content h1 {
+ color: #f5f5f5;
+ font-size: 30px;
+}
+ .donation-section {
+     flex-direction: column;
+ }
+
+ .slideshow-container {
+     margin-right: 0;
+     margin-bottom: 20px;
+ }
+ .mySlides img {
+ border-radius: 100px;
+ height: 400px;
+}
+
+}
+
+</style>
+
+
+</head>
+<body>
+<!------------------------------------ Our Home-------------------> 
+<section class="sub-header"> 
+  <nav>
+    <a href="Gamespace.html"> <img src="pictures/logo.png"> </a>
+     <div class="nav-links" id="navLinks">
+       <i class="fa fa-times" onclick="hideMenu()"></i>
+       <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="about.html">ABOUT</a></li>
+         <li> <a href="https://thrive-africa-initiative-initiatives.my.canva.site">BLOG</a></li>
+         <li><a href="news.html">NEWS</a></li>
+         <li><a href="our_impact.html">OUR IMPACT</a></li>
+         <li><a href="Donate.html">DONATE</a></li>
+         <li><a href="contact.html">CONTACT</a></li>
+       </ul>
+     </div>
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+ </nav> 
+</section> 
+
+  <div class="text-box"> 
+    <h1>GET TO KNOW<br> TO HELP US  (TAI)</h1>
+    <h2>Your donation will help more youths grow and thrive in there art.</h2>
+  </div>
+    <div class="donation-section">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="pictures/Family art 1(1).jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pictures/Family art (2).jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="pictures/donation.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <div class="donation-content">
+            <h1>Support<br>THRIVE AFRICA INITIATIVE</h1>
+            <p>Your donation will help more youths grow and thrive in there art.</p>
+            <button id="donate-button">Donate Now</button>
+       
+           
+         
+        </div>
+    </div>
+
+    <div id="donation-popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <div class="popup-2">
+            <h2>How to Donate</h2>
+            <div class="donation-method">
+                <h3>Airtel Money</h3>
+                <p>Send money to: <strong>0977 123 456</strong></p>
+            </div>
+            <div class="donation-method">
+                <h3>MTN Money</h3>
+                <p>Send money to: <strong>0966 654 321</strong></p>
+            </div>
+            <div class="donation-method">
+                <h3>Zamtel Kwacha</h3>
+                <p>Send money to: <strong>0955 789 123</strong></p>
+            </div>
+            <div class="donation-method">
+                <h3>Bank Transfer</h3>
+                <p>Account Name: <strong>THRIVE AFRICA INITIATIVE</strong></p>
+                <p>Bank: <strong>ABC Bank</strong></p>
+                <p>Account Number: <strong>1234567890</strong></p>
+                <p>Swift Code: <strong>ABCXYZ123</strong></p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+     <!----------- footer ----------> 
+     <footer>
+        <section class="footer">
+          <img src="pictures/logo.png"> </a>
+          <h4>Get to know more about us</h4>
+          <p>follow us on our social media platforms to be updated</p>
+          <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+          </div>
+        </section>
+        <p>&copy; 2024 Thrive Africa Initiative Organisation (TAI). All rights reserved.</p>
+        <p>Made By <i class="fa fa-gamepad"></i> Zoey Muleya</p>
+  
+    </footer>
+
+    <script> 
+    let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        
+        document.getElementById('donate-button').addEventListener('click', function() {
+            document.getElementById('donation-popup').classList.remove('hidden');
+        });
+        
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('donation-popup').classList.add('hidden');
+        });
+        </script>
+</body>
+</html>
