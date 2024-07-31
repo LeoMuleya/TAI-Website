@@ -1127,7 +1127,7 @@ input, textarea {
 }
 .article-news img {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 .article-text {
   padding: 15px;
