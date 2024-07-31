@@ -165,7 +165,7 @@ nav .fa{
 .who-we-are p{
   font-size: 21px;
   color: #000000;
-  text-align: left;
+  text-align:justify;
 }
 .sub-img-1 {
   width: 200px;
