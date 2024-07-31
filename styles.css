@@ -225,10 +225,9 @@ nav .fa{
 
 .sub-header
 {
- min-height: 80vh;
+ min-height: 8vh;
  width: 100%;
- background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7))
- ,url(pictures/about\ background.jpg);
+ background-color: #0c1a47;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -616,7 +615,7 @@ html {
 
 .product-details .description {
   color: #666;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 20px 0;
 }
 
@@ -709,6 +708,23 @@ html {
       flex: 1 1 100%;
       padding: 10px;
   }
+}
+@media (max-width: 368px) {
+  .product-container {
+    gap: 10px;
+  }
+  .product-image img, .product-showcase img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .product-details {
+    flex: 1 1 30%;
+    padding: 20px;
+  }
+  
+
 }
 
 
@@ -869,6 +885,7 @@ button:hover {
 .donate p {
   font-size: 40px;
   margin-bottom: 20px;
+  text-align: center;
  }
 
 
